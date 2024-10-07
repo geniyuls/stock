@@ -2,6 +2,7 @@
 
 body > .ticker-container {
     grid-row : 1/3;
+    overflow: hidden auto;
 }
 
 body > .ticker-container .ticker {
@@ -24,13 +25,16 @@ body > .ticker-container .ticker:hover {
 
 body > .ticker-container .ticker .name {
     font-weight: 500;
+    max-width: 5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 body > .ticker-container .ticker .spring {
     flex-grow: 1;
 }
-
-body > .ticker-container .ticker .code{
+body > .ticker-container .ticker .market, body > .ticker-container .ticker .code{
     background-color: #424242;
     border-radius: 0.25rem;
     font-size: 0.8rem;
