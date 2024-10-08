@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>주가 정보 조회</title>
     <link href="./assets/style/index.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts" type="text/javascript"></script>
     <script defer src="./assets/scripts/index.js" type="text/javascript"></script>  <!--defer은 제일 나중에 사용하겠다는 의미-->
 </head>
 <body>
@@ -18,7 +19,8 @@
 </div>
 <ul class="box ticker-container"></ul>
 <section class="box chart-wrapper">
-    차트 자리
+    <div class="chart ohlc"></div>
+    <div class="chart volume"></div>
 </section>
 <section class="box table-wrapper">
     <table class="table">
